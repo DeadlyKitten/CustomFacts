@@ -85,6 +85,7 @@ namespace CustomFacts
             Instance.Logger.LogDebug($"Loading fact at index: {index}");
             Instance.Logger.LogDebug(Instance.AllFacts[index]);
             __instance.facttext.text = Instance.AllFacts[index];
+            __instance.facttext.resizeTextMinSize = 1;
 
             return false;
         }
